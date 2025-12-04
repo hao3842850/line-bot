@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+line-bot-sdk
+apscheduler
+python-dotenv
