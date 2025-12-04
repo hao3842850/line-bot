@@ -10,8 +10,8 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import TextSendMessage, MessageEvent, TextMessage
 
 # Load env (production should set env vars instead of .env)
-LINE_CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "")
-LINE_CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", "")
+LINE_CHANNEL_SECRET = os.getenv("82d3eb9fd528e0fce78e949e8dccd5ad", "")
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv("P44c95Zm75KZXT019GKUSO/EBDmdR5IrWS0hub+a6TyR1Ct783Z68VWGwBiTA6zx0G7jnySwhAD64GnlByAMJv H5O48Rz1F79ODd2knt4v7r8vOEdnsYD8NxfIyVac68/OzAjlxAZcmeBpKWU2u2WQdB04t89/1O/w1cDnyilFU=", "")
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN) if LINE_CHANNEL_ACCESS_TOKEN else None
 handler = WebhookHandler(LINE_CHANNEL_SECRET) if LINE_CHANNEL_SECRET else None
